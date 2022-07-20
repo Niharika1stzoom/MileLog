@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation.xml"
+    app:startDestination="@id/tripFragment">
+
+    <fragment
+        android:id="@+id/tripFragment"
+        android:name="com.firstzoom.milelog.ui.TripFragment"
+        android:label="trip_fragment"
+        tools:layout="@layout/trip_fragment" />
+    <fragment
+        android:id="@+id/editTripFragment"
+        android:name="com.firstzoom.milelog.ui.trip.EditTripFragment"
+        android:label="fragment_edit_trip"
+        tools:layout="@layout/fragment_edit_trip" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.firstzoom.milelog.SettingsFragment"
+        android:label="SettingsFragment" />
+    <fragment
+        android:id="@+id/importFragment"
+        android:name="com.firstzoom.milelog.ui.ImportFragment"
+        android:label="fragment_import"
+        tools:layout="@layout/fragment_import" />
+</navigation>

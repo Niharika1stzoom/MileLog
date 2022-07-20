@@ -1,0 +1,22 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    >
+
+
+    <PreferenceCategory app:title="@string/messages_header">
+
+        <EditTextPreference
+            app:key="@string/key_combine"
+            app:isPreferenceVisible="true"
+            app:title="@string/combine_trips"
+            app:useSimpleSummaryProvider="true" />
+        <SwitchPreferenceCompat
+            app:key="@string/key_track"
+            app:summaryOff="@string/track_summary_off"
+            app:summaryOn="@string/track_summary_on"
+            app:title="@string/track_title" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

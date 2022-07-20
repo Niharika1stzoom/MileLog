@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:elevation="@dimen/card_view_elevation"
+    android:padding="@dimen/padding_med"
+    app:cardCornerRadius="@dimen/card_view_corner_radius"
+    app:cardElevation="10dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:paddingBottom="@dimen/margin_small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/startLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin"
+        android:layout_marginHorizontal="@dimen/margin"
+        android:ellipsize="end"
+        android:textSize="@dimen/font_medium"
+        android:textStyle="bold"
+        android:maxLines="2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:drawablePadding="4dp"
+        android:drawableLeft="@drawable/ic_action_start"
+        tools:text="B1003, Surya Complex, Citylight Main Road, Surat-395007" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/startTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_large"
+        android:ellipsize="end"
+        android:textColor="@color/item_color_time"
+        android:textSize="@dimen/font_small"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/startLabel"
+        tools:text="Sep 6, 2022 at 9.39 am" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toBottomOf="@id/startLabel"
+            android:layout_marginLeft="12dp"
+            app:layout_constraintStart_toStartOf="@id/startLabel"
+            app:layout_constraintBottom_toTopOf="@id/endLabel"
+            android:background="#FF0000FF" />
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/endLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin"
+            android:layout_marginHorizontal="@dimen/margin"
+            android:ellipsize="end"
+            android:textSize="@dimen/font_medium"
+            android:textStyle="bold"
+            android:maxLines="2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/startTime"
+            android:drawablePadding="4dp"
+            android:drawableLeft="@drawable/ic_action_end"
+            tools:text="B1003, Surya Complex, Citylight Main Road, Surat-395007" />
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/endTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_large"
+            android:ellipsize="end"
+            android:textColor="@color/item_color_time"
+            android:textSize="@dimen/font_small"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/endLabel"
+            tools:text="Sep 6, 2022 at 9.39 am" />
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/distanceLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_xsmall"
+
+            android:layout_marginHorizontal="@dimen/margin"
+            android:ellipsize="end"
+            android:textColor="@color/item_color_title"
+            android:textSize="@dimen/font_medium"
+            android:textStyle="bold"
+            android:maxLines="2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/endTime"
+            android:drawablePadding="4dp"
+            android:drawableLeft="@drawable/ic_action_stop"
+            tools:text="Distance(km):" />
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/durationLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginHorizontal="@dimen/margin_large"
+            android:ellipsize="end"
+            android:textSize="@dimen/font_medium"
+            android:textStyle="bold"
+            android:maxLines="2"
+            android:visibility="gone"
+            android:textColor="@color/item_color_title"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/distanceLabel"
+            android:drawablePadding="4dp"
+            android:drawableLeft="@drawable/ic_action_stop"
+            tools:text="Duration(min):" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
